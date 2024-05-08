@@ -1,13 +1,40 @@
 ---
-
+    const navItems = [
+        {
+            title: 'Experiencia',
+            label: 'experiencia',
+            url: '/#experiencia'
+        },
+        {
+            title: 'Proyectos',
+            label: 'proyectos',
+            url: '/#proyectos'
+        },
+        {
+            title: 'Sobre mí',
+            label: 'sobre-mi',
+            url: '/#sobre-mi'
+        },
+        {
+            title: 'Contacto',
+            label: 'contacto',
+            url: '/#contacto'
+        }
+    ]
 ---
 
-<header class="flex px-4 py-2">
-    <nav class=" space-x-4">        
-        <a href="/experiencia">Experiencia</a>
-        <a href="/proyectos">Proyectos</a>
-        <a href="/sobre-mi">Sobre mí</a>
-        <a href="/contacto">Contacto</a>
-        <button>Mode</button>
+<header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2">
+    <nav class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center">
+        {
+            navItems.map((link) => (
+                <a
+                class="relative block px-2 py-2 transition hover:text-emerald-500 dark:hover:text-emerald-400"
+                aria-label={link.label}
+                href={link.url}                
+                >
+                    {link.title}
+                </a>
+            ))
+        }
     </nav>
 </header>
