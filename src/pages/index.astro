@@ -1,4 +1,7 @@
 ---
+import User from '../../public/icons/User.astro';
+
+import AboutMe from '../components/AboutMe.astro';
 import Hero from '../components/Hero.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Layout from '../layouts/Layout.astro';
@@ -23,7 +26,11 @@ import Layout from '../layouts/Layout.astro';
 				<h1>Proyectos</h1>
 			</SectionContainer>
 			<SectionContainer id="sobre-mi">
-				<h1>Sobre mí</h1>
+				<h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-white">
+					<User class="size-96"/>
+					Sobre mí
+				</h2>
+				<AboutMe />
 			</SectionContainer>
 		</div>
 	</main>
