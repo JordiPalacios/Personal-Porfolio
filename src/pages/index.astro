@@ -1,6 +1,7 @@
 ---
 import User from '../../public/icons/User.astro';
-
+import Projects from '../../public/icons/Projects.astro';
+import Experience from '../../public/icons/Experience.astro';
 import AboutMe from '../components/AboutMe.astro';
 import Hero from '../components/Hero.astro';
 import SectionContainer from '../components/SectionContainer.astro';
@@ -20,14 +21,20 @@ import Layout from '../layouts/Layout.astro';
 		</SectionContainer>
 		<div class="space-y-24">
 			<SectionContainer id="experiencia">
-				<h1>Experiencia</h1>
+				<h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-white">
+					<Experience class="size-8"/>
+					Experiencia
+				</h2>
 			</SectionContainer>
 			<SectionContainer id="proyectos">
-				<h1>Proyectos</h1>
+				<h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-white">
+					<Projects class="size-8"/>
+					Proyectos
+				</h2>
 			</SectionContainer>
 			<SectionContainer id="sobre-mi">
 				<h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-white">
-					<User class="size-96"/>
+					<User class="size-8"/>
 					Sobre mí
 				</h2>
 				<AboutMe />
