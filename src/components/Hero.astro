@@ -1,28 +1,45 @@
 ---
+import Email from "../../public/icons/Email.astro";
+import GitHub from "../../public/icons/GitHub.astro";
+import LinkedIn from "../../public/icons/LinkedIn.astro";
 import Badge from "./Badge.astro";
+import SocialMedia from "./SocialMedia.astro";
 
 
 ---
 
-<section class="max-w-xl">
-    <div class="flex gap-4 mb-4">
+<section class="flex flex-col items-start max-w-2xl">
+    <div class="flex items-center gap-4 mb-4">
         <img 
-        class="rounded-full overflow-hidden size-16"
-        src="/fotoJordiPalacios.webp" 
+        class="rounded-full overflow-hidden size-40"
+        src="/jordiPalaciosBlue.png" 
         alt="fotoJordiPalacios"
         >
         <a href="https://www.linkedin.com/in/jordi-palacios-g%C3%B3mez-529046164" target="_blank" rel="noopener noreferrer">
             <Badge> Disponible para trabajar </Badge>
         </a>
-        </div>
-        <h1 class="text-white text-5xl font-bold flex flex-col items-start pb-4 ">
-            <span> 👋 Hey,</span>
-            <span>soy Jordi Palacios</span>
-        </h1>
-        <p class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-fuchsia-500 [&>strong]:text-fuchsia-800 [&>strong]:font-semibold dark:text-gray-300">
-            +3 años de experiencia en la programación de autómatas.
-            <strong>Ingeniero en Electrónica y Automatización</strong>
-            de Barcelona, España 🇪🇸. 
-            Especializado .
-        </p>   
+    </div>
+    <h1 class="text-white text-5xl font-bold pb-4 ">
+        <span>👋 Hey, soy Jordi Palacios</span>
+    </h1>
+    <p class="mt-6 text-xl text-gray-300 [&>strong]:text-emerald-500 [&>strong]:font-semibold">
+        +3 años de experiencia en la programación de autómatas.
+        <strong>Ingeniero en Electrónica y Automatización</strong>
+        de Barcelona, España 🇪🇸. 
+        Especializado en el desarrollo de soluciones únicas y escalables adaptadas al cliente.
+    </p>   
+    <nav class="flex flex-wrap gap-4 mt-8">
+        <SocialMedia href="mailto:palaciosgomezjordi@gmail.com">
+            <Email class="size-4" />
+            Contáctame
+        </SocialMedia>
+        <SocialMedia href="https://www.linkedin.com/in/jordi-palacios-g%C3%B3mez-529046164/">
+            <LinkedIn class="size-4" />
+            LinkedIn
+        </SocialMedia>
+        <SocialMedia href="https://github.com/JordiPalacios">
+            <GitHub class="size-4" />
+            GitHub
+        </SocialMedia>
+    </nav>
 </section>
