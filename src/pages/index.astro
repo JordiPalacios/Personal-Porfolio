@@ -10,8 +10,21 @@ import Layout from '../layouts/Layout.astro';
 	description="Contrata a Jordi Palacios para desarrollar tu página web y hacerla única. Desarrollador Web. Especializado en crear experiencias. "
 >
 	<main class="px-4">
-		<SectionContainer>
-			<Hero />
+		<SectionContainer class="py-16 md-py-36">
+			<Hero>
+				<slot />
+			</Hero>
 		</SectionContainer>
+		<div class="space-y-24">
+			<SectionContainer id="experiencia">
+				<h1>Experiencia</h1>
+			</SectionContainer>
+			<SectionContainer id="proyectos">
+				<h1>Proyectos</h1>
+			</SectionContainer>
+			<SectionContainer id="sobre-mi">
+				<h1>Sobre mí</h1>
+			</SectionContainer>
+		</div>
 	</main>
 </Layout>
