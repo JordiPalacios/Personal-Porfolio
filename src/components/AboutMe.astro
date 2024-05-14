@@ -1,30 +1,32 @@
 ---
 const personalImgAlt = "Jordi Palacios"
+const currentAge = new Date().getFullYear() - 1999
+const currentExperience = new Date().getFullYear() - 2021
+const startingYear = new Date().getFullYear() - 2022
 ---
 
 <article class="flex flex-col items-center justify-center gap-8 text-gray-300 md:flex-row">
     <div class="[&>p]:mb-4 [&>p>strong]:text-emerald-200 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1">
         <p>
-            Me llamo Miguel Ángel pero mis amigos me llaman midu. Empecé en la
-            programación con un Amstrad, tenía 10 años. Actualmente estoy 
-            <strong>liderando equipos de desarrollo en multinacionales</strong>
+            Me llamo Jordi Palacios, tengo {currentAge} años y soy <strong>ingeniero en electrónica y automática</strong>. Tras <strong>+{currentExperience} años </strong> ejerciendo como programador de autómatas y robots, decidí especializarme en el mundo del desarrollo web. A día de hoy, disfruto desarrollando <strong>experiencias web para los usuarios.</strong>
         </p>
 
         <p>
-            Algunos de mis éxitos incluyen <strong
-            >colaborar con Mozilla para el desarrollo de las primeras apps en su
-            sistema FirefoxOS</strong
-            >. Aunque hoy está desaparecido fue un gran avance en el mundo del
-            desarrollo web.
+            Todo empezo por unas simples pregunta, hace {startingYear} años: <br>
+            <strong>¿Cómo se crea una página web? ¿Seré capaz de crear una?</strong> <br>
+            Desde entonces, no he parado de aprender y experimentar en el mundo de la programación.
         </p>
 
         <p>
-            Como creador de contenido, <strong
-            >cuento con el canal de habla hispana más visto del mundo en la
-            categoría de <em class="italic">Software & Game Development</em> en Twitch</strong
-            >. Mi objetivo es mejorar la empleabilidad de la comunidad hispana y el
-            acceso a contenido de calidad.
+            Entre mis éxitos más recientes, destaco el <strong>desarrollo de la página web para Visual Show</strong>, una pequeña startup de video 360º especializada en bodas.
+            Actualmente ya estoy trabajando en un <strong>nuevo reto web para  Teléfono Audiolibro.</strong>
+        </p>
+
+        <p>
+            Saliendo de lo profesional, soy una persona muy activa. <br>
+            En mi tiempo libre, me gusta <strong>hacer deporte y viajar</strong>. Desconectando un poco de la rutina diaria para recargar pilas.
+            De este modo siempre tengo la mente fresca para afrontar <strong> nuevos retos y ganas de seguir aprendiendo. </strong>
         </p>
     </div>
-    <img width="200" height="200" src="/me.jpg" alt={personalImgAlt} class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-emerald-500/5 ring-1 ring-white/20" style="object-position: 50% 50%">
+    <img width="200" height="200" src="/me.webp" alt={personalImgAlt} class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-emerald-500/5 ring-1 ring-white/20" style="object-position: 50% 50%">
 </article>
