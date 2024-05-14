@@ -1,0 +1,22 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+    {
+        date: '2021 - Presente',
+        title: 'Software Department',
+        company: 'Deima Ingenieros S.A.',
+        description: 
+            'Especializado en la programación de autómatas y robots industriales, mejorando la durabilidad y eficiencia del software en ambos campos. Interacción con clientes para la resolución de problemas y la mejora de la calidad de los productos, durante las puestas en marcha y el mantenimiento de los mismos.',
+    }
+]
+---
+
+<ol class="relative mt-16">                  
+    {EXPERIENCE.map((experience) => (
+        <li>
+            <ExperienceItem {...experience} />
+        </li>
+    ))}
+</ol>
+
