@@ -61,7 +61,7 @@
     const observer = new IntersectionObserver(callback, {
         root: null,
         rootMargin: "0px",
-        threshold: 0.90,
+        threshold: 0.3,
     })
 
     sections.forEach((section) => {
@@ -90,7 +90,7 @@ nav {
 
 @keyframes nav-shadown {
     to {
-    @apply shadow-lg ring-1 backdrop-blur bg-gray-800/90 ring-white/10;
+        @apply shadow-lg ring-1 backdrop-blur bg-gray-800/40 ring-white/10;
     }
 }
 </style>
