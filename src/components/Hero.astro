@@ -5,6 +5,8 @@ import LinkedIn from "../../public/icons/LinkedIn.astro";
 import Badge from "./Badge.astro";
 import SocialMedia from "./SocialMedia.astro";
 
+const currentExperience = new Date().getFullYear() - 2021
+
 
 ---
 
@@ -23,7 +25,7 @@ import SocialMedia from "./SocialMedia.astro";
         <span>👋 Hey, soy Jordi Palacios</span>
     </h1>
     <p class="mt-6 text-xl text-gray-300 [&>strong]:text-emerald-500 [&>strong]:font-semibold">
-        +3 años de experiencia en la programación de autómatas.
+        +{currentExperience} años de experiencia en la programación de autómatas.
         <strong>Ingeniero en Electrónica y Automática</strong>
         de Barcelona, España 🇪🇸. 
         Especializado en el desarrollo de soluciones únicas y escalables adaptadas al cliente.
