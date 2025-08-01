@@ -5,6 +5,7 @@ import CSS from "../../public/icons/CSS.astro"
 import LinkButton from "./LinkButton.astro"
 import GitHub from "../../public/icons/GitHub.astro"
 import LinkProject from "../../public/icons/LinkProject.astro"
+import Tailwind from "../../public/icons/Tailwind.astro"
 
 
 const TAGS = {
@@ -12,6 +13,11 @@ const TAGS = {
         name: 'CSS',
         class: 'bg-[#047c97] text-white',
         icon: CSS,
+    },
+    TAILWIND: {
+        name: 'Tailwind',
+        class: 'bg-[#047c97] text-white',
+        icon: Tailwind,
     },
     REACT: {
         name: 'React',
@@ -35,6 +41,16 @@ const PROJECTS = [
         link: 'https://visualshow360.com',
         github: 'https://github.com/JordiPalacios/VisualShow360Web?tab=readme-ov-file',
         tags: [TAGS.CSS,TAGS.REACT, TAGS.VITE],
+    },
+    {
+        image: '/telefonoaudiolibro.webp',
+        tittle: 'Teléfono Audiolibro - Sitio web hecho a medida para empresa especializada en eventos para bodas',
+        description: 'Sitio web SPA desarrollado con el objetivo de dar visibilidad y fiabilidad a la marca.',
+        // Obteniendo un incremento del 10% en las ventas.
+        description2: 'Creado desde cero con React, Tailwind y Vite. Desarrollando custom hooks y componentes reutilizables, optimización de carga e implementación de SEO. Además, se han integrado animaciones, rutas y sliders. Diseñada usando la metodologia "Mobile First", haciéndola responsive y accesible para el usuario.',
+        link: 'https://telefonoaudiolibro.es',
+        github: 'https://github.com/JordiPalacios/TelefonoAudiolibro.es',
+        tags: [TAGS.TAILWIND,TAGS.REACT, TAGS.VITE],
     },
     {
         image: '/pokemon.webp',
